@@ -17,8 +17,9 @@ public class DestroyPipes : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log(other.gameObject.name);
         Destroy(other.gameObject);
     }
 
